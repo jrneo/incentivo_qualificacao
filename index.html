@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incentivo à Qualificação</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caviar+Dreams&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Incentivo à Qualificação</h1>
+        <div class="menu">
+            <div class="menu-item" onclick="mostrarPopUp('popup1')">Ensino Fundamental Completo</div>
+            <div class="menu-item" onclick="mostrarPopUp('popup2')">Ensino Médio Completo</div>
+            <div class="menu-item" onclick="mostrarPopUp('popup3')">Ensino Médio Profissionalizante ou Ensino Médio com Curso Técnico Completo</div>
+            <div class="menu-item" onclick="mostrarPopUp('popup4')">Curso de Graduação Completo</div>
+            <div class="menu-item" onclick="mostrarPopUp('popup5')">Especialização (carga horária mínima de 360 horas)</div>
+            <div class="menu-item" onclick="mostrarPopUp('popup6')">Mestrado</div>
+            <div class="menu-item" onclick="mostrarPopUp('popup7')">Doutorado</div>
+        </div>
+    </div>
+
+    <!-- Pop-ups -->
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="fecharPopUp('popup1')">&times;</span>
+            <h3>Ensino Fundamental Completo</h3>
+            <p><strong>Percentual de Incentivo:</strong> 10%</p>
+            <p><strong>Área de Conhecimento:</strong></p>
+            <ul>
+                <li>Com relação direta ao ambiente organizacional: Não aplicável.</li>
+                <li>Com relação indireta: Não aplicável.</li>
+            </ul>
+            <button class="btn-details" onclick="window.location.href='detalhes-fundamental.html'">Ver Detalhes</button>
+        </div>
+    </div>
+
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="fecharPopUp('popup2')">&times;</span>
+            <h3>Ensino Médio Completo</h3>
+            <p><strong>Percentual de Incentivo:</strong> 15%</p>
+            <p><strong>Área de Conhecimento:</strong></p>
+            <ul>
+                <li>Com relação direta: Não aplicável.</li>
+                <li>Com relação indireta: Não aplicável.</li>
+            </ul>
+            <button class="btn-details" onclick="window.location.href='detalhes-medio.html'">Ver Detalhes</button>
+        </div>
+    </div>
+
+    <div id="popup3" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="fecharPopUp('popup3')">&times;</span>
+            <h3>Ensino Médio Profissionalizante ou Ensino Médio com Curso Técnico Completo</h3>
+            <p><strong>Percentual de Incentivo:</strong></p>
+            <ul>
+                <li>Com relação direta: 20%</li>
+                <li>Com relação indireta: 10%</li>
+            </ul>
+            <button class="btn-details" onclick="window.location.href='detalhes-tecnico.html'">Ver Detalhes</button>
+        </div>
+    </div>
+
+    <div id="popup4" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="fecharPopUp('popup4')">&times;</span>
+            <h3>Curso de Graduação Completo</h3>
+            <p><strong>Percentual de Incentivo:</strong></p>
+            <ul>
+                <li>Com relação direta: 25%</li>
+                <li>Com relação indireta: 15%</li>
+            </ul>
+            <button class="btn-details" onclick="window.location.href='detalhes-graduacao.html'">Ver Detalhes</button>
+        </div>
+    </div>
+
+    <div id="popup5" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="fecharPopUp('popup5')">&times;</span>
+            <h3>Especialização (carga horária mínima de 360 horas)</h3>
+            <p><strong>Percentual de Incentivo:</strong></p>
+            <ul>
+                <li>Com relação direta: 30%</li>
+                <li>Com relação indireta: 20%</li>
+            </ul>
+            <button class="btn-details" onclick="window.location.href='detalhes-especializacao.html'">Ver Detalhes</button>
+        </div>
+    </div>
+
+    <div id="popup6" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="fecharPopUp('popup6')">&times;</span>
+            <h3>Mestrado</h3>
+            <p><strong>Percentual de Incentivo:</strong></p>
+            <ul>
+                <li>Com relação direta: 52%</li>
+                <li>Com relação indireta: 35%</li>
+            </ul>
+            <button class="btn-details" onclick="window.location.href='detalhes-mestrado.html'">Ver Detalhes</button>
+        </div>
+    </div>
+
+    <div id="popup7" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="fecharPopUp('popup7')">&times;</span>
+            <h3>Doutorado</h3>
+            <p><strong>Percentual de Incentivo:</strong></p>
+            <ul>
+                <li>Com relação direta: 75%</li>
+                <li>Com relação indireta: 50%</li>
+            </ul>
+            <button class="btn-details" onclick="window.location.href='detalhes-doutorado.html'">Ver Detalhes</button>
+        </div>
+    </div>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
